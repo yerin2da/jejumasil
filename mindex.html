@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제주마실</title>
+    <!-- mobile용 파비콘 주소-->
+    <link rel="icon" href="./images/f_logo_icon.ico" type="image/x-icon">
     <!-- 1. 초기화 -->
     <link rel="stylesheet" href="./css/mreset.css" type="text/css">
 
@@ -28,6 +30,12 @@
     <!-- 8. 올레길 스와이퍼 슬라이드 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 9. 제이쿼리 라이브러리 cdn방식-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+    <!-- 10. 제이쿼리 UI라이브러리 -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -82,6 +90,7 @@
             </script>
 
             <!-- gnb -->
+           
             <ul class="gnb">
                 <li>
                     <div class="flex">
@@ -151,41 +160,39 @@
                     </ul>
                 </li>
             </ul>
-
-           
         </nav>
-        <!-- 제이쿼리 라이브러리 cdn방식-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-        <!-- 제이쿼리 UI라이브러리 -->
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+      
         <!-- gnb 제이쿼리 -->
         <script>
             $(document).ready(function(){
-               
+
                 $('header> .toggle').click(function(){ 
+                    
                     $('#search').focus();
                     $('nav.navi').fadeIn(250);
                     $(this).fadeOut(250);
                     $('.sub').css('display','none');
                     $('h1').css('background','#fff');
-                    
                 });
-                                
-                           
+                            
+                $('.flex > a').click(function(){
+                    return false;  
+                });          
                                 
                 
 
                 $('.navi>i.fa-times').click(function(){
                     $('#search').focus();
 
-                     $('nav.navi').fadeOut(250);
+                    $('nav.navi').fadeOut(250);
                     $('header> .toggle').fadeIn(250); 
                     $('h1').css('background','transparent')
                 });
 
                 $('#d1').click(function(){
+                    
                     $('.gnb>li:first-child .sub').slideDown(250);
-                   if( 
+                    if( 
                     $(this).hasClass('fa-angle-down')==true){
                         $(this).attr('class','fas fa-angle-up')
                     }else(
@@ -247,9 +254,7 @@
                 <strong> "이 브라우저는 video 태그를 지원하지 않습니다."</strong>
             
             <i class="fa-solid fa-pause"></i>
-        </article>
-        <!-- 제이쿼리 라이브러리 cdn방식-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        </article>  
         <script>
             $(document).ready(function(){
 
@@ -381,8 +386,6 @@
                 </script>
             </article>
         </section>  
-        <!-- 제이쿼리 라이브러리 cdn방식-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <!-- 올레길 스와이퍼 슬라이드 서식 -->
         <script>
             function olle(value){
@@ -487,8 +490,6 @@
             </article>
         </section>
 
-        <!-- 제이쿼리 라이브러리 cdn방식-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
         <!-- 축제-공연전시 스크립트 -->
         <script>
             
@@ -560,8 +561,7 @@
                         </li>
                     </ul>   
 
-                     <!-- 제이쿼리 UI라이브러리 -->
-                    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+                    
                     <!-- 고양이발자국 제이쿼리 -->
                     <script>
                         $(document).ready(function(){
@@ -702,6 +702,10 @@
             $(document).ready(function(){
                 //동 클릭
                 $('.dong01').click(function(){
+                    let n=1;
+                    document.getElementById('page_n').innerHTML='<strong>'+n+'</strong>/5';
+                    document.getElementById('dong05').src='./images/main4_dong0'+n+'.jpg';
+
                     $('.dong_map').css('display','block');
                     $('.dong3').css('display','block');
                     $('.dong01').css({
@@ -733,7 +737,10 @@
 
                 //서 클릭
                 $('.su01').click(function(){
-                    
+                    let m = 1;
+                    document.getElementById('page_n2').innerHTML='<strong>'+m+'</strong>/5';
+                    document.getElementById('su05').src='./images/main4_su0'+m+'.jpg';
+
                     $('.su_map').css('display','block');
                     $('.su3').css('display','block');
                     $('.su01').css({
@@ -765,7 +772,9 @@
 
                 //남 클릭
                 $('.nam01').click(function(){
-                  
+                    let o = 1;
+                    document.getElementById('page_n3').innerHTML='<strong>'+o+'</strong>/5';
+                    document.getElementById('nam05').src='./images/main4_nam0'+o+'.jpg';
                     $('.nam_map').css('display','block');
                     $('.nam3').css('display','block');
                     $('.nam01').css({
@@ -797,7 +806,9 @@
 
                 //북
                 $('.buk01').click(function(){
-                    
+                    let p = 1;
+                    document.getElementById('page_n4').innerHTML='<strong>'+p+'</strong>/5';
+                    document.getElementById('buk05').src='./images/main4_buk0'+p+'.jpg';
                     $('.buk_map').css('display','block');
                     $('.buk3').css('display','block');
                     $('.buk01').css({
@@ -841,7 +852,6 @@
 
 
             l_btn.addEventListener('click',function(){
-                
                 if(n==1){
                     n=5;
                 }else{
@@ -1246,29 +1256,26 @@
                     </li>
                     <li>INSTAGRAM</li>
                     <li>
-                       <a>SHOW ALL<i class="fa-solid fa-arrow-right"></i> </a> 
+                        <a>SHOW ALL<i class="fa-solid fa-arrow-right"></i> </a> 
                     </li>
                     
                 </ul>
-                <!-- 메이슨리_인스타 사진 -->
-                <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
                 
                     <div class="grid js-masonry">
                         <div class="grid-item">
                             <img src="./images/main5_ist_img01.png" alt="인스타 사진">
                             <img src="./images/main5_ist_img02.png" alt="인스타 사진">
                             <img src="./images/main5_ist_img03.png" alt="인스타 사진">
-            
                         </div>
                         <div class="grid-item grid-item--width2">
                             <img src="./images/main5_ist_img04.png" alt="인스타 사진">
                             <img src="./images/main5_ist_img05.png" alt="인스타 사진">
                             <img src="./images/main5_ist_img06.png" alt="인스타 사진">
                         </div>
-                  </div>
-                
-
+                    </div>
             </article>
+            <!-- 메이슨리_인스타 사진 -->
+            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
         </section>
 
         <!-- 관련사이트 -->

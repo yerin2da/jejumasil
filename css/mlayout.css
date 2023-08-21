@@ -104,21 +104,20 @@ i.fa-angle-up{
 .sub{
     width: 90%;
     padding: 10px;
-    line-height: 20px;
+    line-height: 50px;
     font-size: 0.9rem;
 }
 .sub>li a{
     display: block;
-    
 }
+
 .gnb>li{
    width: 100%;
-   /* height:70px; */
    line-height: 70px;
 }
 
 .gnb>li a{
-    /* display: block; */
+   
 }
 .flex{
     width: 100%;

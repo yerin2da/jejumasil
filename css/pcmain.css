@@ -16,7 +16,7 @@ article>video{
     height: 900px;
 }
 .swiper-container {
-    width:700px;left: 300px;top: -370px;
+    width:710px;left: 300px;top: -450px;
     position: relative;
     overflow: hidden;
     margin: 0px auto;
@@ -28,7 +28,7 @@ transition: 0.3s;
 }
 .swiper-slide img {
 display: block;
-height: 350px;
+height: 450px;
 }
 
 .swiper-slide-active {
@@ -60,8 +60,9 @@ scale: 1 !important;
     font-size: 30px;
     line-height: 48px;
 }
-.cos_txt1 p.cos_txt2 p,.cos_txt3 p{
-    font-size: 15px;
+.cos_txt1 p,.cos_txt2 p,.cos_txt3 p{
+    font-size: 16px;
+    line-height: 25px;
     padding-top: 20px;
 }
 
@@ -143,6 +144,8 @@ select::-ms-expand{
  }
 .begin-slide{}
 .middle-slide,.advanced-slide{display: none;}
+
+
 
 /*main3 서식*/
 .main3{
@@ -233,19 +236,21 @@ select::-ms-expand{
     width: 100%;
 }
 .img_wrap1 p,.img_wrap2 p{
+    font-size: 15px;
     padding-top: 10px;
 }
 .img_wrap1 p:nth-child(3),.img_wrap2 p:nth-child(3){
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-top: 50px;
+    padding-top: 30px;
 
 }
 .img_wrap1 p:first-child,.img_wrap2 p:first-child{font-size: 13px;}
 .img_wrap1 p:last-child,.img_wrap2 p:last-child{
-    font-size: 18px;
+    font-size: 16px;
 }
 .img_wrap2 {display: none;}
 
@@ -361,6 +366,14 @@ line-height: 33px;
         left: 250px;
     }
     .map_sou,.map_west,.map_nor{display: none;}
+
+
+
+    /* 메인 5,6 sns 서식 */
+        /* 유투브 */
+    .main6{
+        padding: 80px 0px;
+    }
     .you_txt{
         width: 1200px;
         margin: 20px auto;
@@ -374,7 +387,8 @@ line-height: 33px;
         top: 25px; left: 70px;
     }
     .you_txt p:last-of-type{
-        font-size: 15px;
+        font-size: 16px;
+        color: #474747;
         text-indent: 70px;
     }
     .you_txt span{color: orange;}
@@ -401,12 +415,17 @@ line-height: 33px;
     .youtube_wrap li a img:hover{
         object-fit:cover;
         transform:scale(1.2);
-        transition: transform .5s;
+        transition: 0.5s;
     }
+    
     .ytb_img{
         width: 270px;height: 150px;
         overflow: hidden;
+        border-radius: 10px;
     }
+
+        /* 인스타 */
+       
     .insta_txt{
         width: 1200px;
         margin: 80px auto;
@@ -423,7 +442,8 @@ line-height: 33px;
     }
     .insta_txt p:first-of-type span{color: orange;}
     .insta_txt p:last-of-type{
-        font-size: 15px;
+        color: #474747;
+        font-size: 16px;
         padding-top: 10px;
         position: absolute;
         top: 50px;left: 70px;
@@ -435,22 +455,35 @@ line-height: 33px;
         margin: 0 auto;
     }
     .insta_img_wrap{
-        width:940px;
+        width:1200px;
         display: flex;
         flex-wrap: wrap;
-        align-content: space-between;
-        margin: 0 180px;
+        justify-content: space-between;
+        margin: 0 auto;
     }
-    .insta_wrap .insta_img_wrap li{margin-right: 70px;}
-    .insta_wrap .insta_img_wrap li a .moon{width: 263px;}
-    .insta_wrap .insta_img_wrap li a .handam{width: 246px;}
-    .insta_wrap .insta_img_wrap li a .hanra{width: 213px;}
-    .insta_wrap .insta_img_wrap li a .woodo{width: 214px;}
-    .insta_wrap .insta_img_wrap li a .flower{width: 263px;}
-    .insta_wrap .insta_img_wrap li a .namwon{width: 246px;}
-    .insta_wrap .insta_img_wrap li span{display: block;}
 
-/* 메인6 패밀리사이트 서식 시작 */
+    .insta_wrap .insta_img_wrap li:nth-child(4), .insta_wrap .insta_img_wrap li:last-child{
+        margin-right: 0px;
+    }
+    .insta_wrap .insta_img_wrap li{
+        width: 270px;
+        margin-right: 20px;
+    }
+    .insta_wrap .insta_img_wrap li img{
+        width: 100%;
+    }
+    
+    .insta_wrap .insta_img_wrap li span{
+        text-indent: 10px;
+        font-size: 14px;
+        display: block;
+    }
+    .insta_wrap .insta_img_wrap li:hover span{
+        text-decoration: underline;
+    }
+
+
+/* 메인7 패밀리사이트 서식 시작 */
 .fs{position: relative;
     background: #FAF9F7;
     height: 120px;
@@ -462,7 +495,7 @@ line-height: 33px;
     overflow: hidden;
 }
 .slide_wrap{/*전체 이미지 개수*/
-    width: 2000px;
+    width: 2800px;
     display: flex;
 }
 .slide_wrap > li{
@@ -473,7 +506,10 @@ line-height: 33px;
 
 .slide_wrap > li img{
     width: 200px;
-    vertical-align: middle;}
+    vertical-align: middle;
+}
+
+
 /*탑버튼서식*/
 .top_btn{
     position: fixed;

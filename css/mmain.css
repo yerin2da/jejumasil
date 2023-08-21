@@ -600,7 +600,7 @@ strong{
     padding-top: 50px;
     width: 100%;
     /* background: rgb(127, 221, 127); */
-     position: relative;
+    position: relative;
 }
 .sns> .main5_bg{
     position: absolute;
@@ -731,8 +731,7 @@ strong{
     border-radius: 5px;
 }
 .grid-item {
-     width: 50%; 
-     
+    width: 50%; 
 }
 .grid-item--width2 { 
     width: 50%; 
