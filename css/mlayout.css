@@ -15,14 +15,16 @@ header{
     */
 }
 header > h1{
-    padding-left: 5px;
+    padding-left: 5px; 
     padding-top: 5px;
     /* z-index: 9999; */
 }
 header > h1 img{
     height: 60px;
-   
 }
+
+
+
 header> .toggle > img{
     display: block;
     position: absolute;
@@ -116,9 +118,7 @@ i.fa-angle-up{
    line-height: 70px;
 }
 
-.gnb>li a{
-   
-}
+
 .flex{
     width: 100%;
     display: flex;

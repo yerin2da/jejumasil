@@ -648,6 +648,7 @@ strong{
     line-height: 40px;
 }
 .ytb_t>li:last-child>a{
+    cursor: pointer;
     font-size: 0.8rem;
     line-height: 40px;position: absolute;right: 0;
     color: #858585;
@@ -716,6 +717,8 @@ strong{
     line-height: 40px;
 }
 .ist_t>li:last-child>a{
+    cursor: pointer;
+
     font-size: 0.8rem;
     line-height: 40px;position: absolute;right: 0;
     color: #858585;
@@ -796,7 +799,7 @@ aside>a{
     margin: 2%;
     color: #fff;
     position: fixed;
-    right: 0;bottom: 0;
+    right: 0px;bottom: 0px;
     z-index: 999;
     font-size: 0.9rem;
     display: none;
