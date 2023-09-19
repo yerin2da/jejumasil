@@ -756,6 +756,7 @@ strong{
 }
 .slide{/*보여줄 이미지만큼 100/개수*/
     width: 33.3333%;
+    position: relative;
 }
 .slide>h3{
     display: none;
@@ -763,7 +764,6 @@ strong{
 .slide_wrap{/*전체 이미지 개수*/
     width: 500%;
     display: flex;
- 
 }
 .slide_wrap > li{
     width: 100%;
@@ -773,9 +773,6 @@ strong{
 .slide_wrap > li img{
     width: 60px;
     vertical-align: middle;
-   
-    
-    
 }
 .slide i.fas{
     position: absolute;
