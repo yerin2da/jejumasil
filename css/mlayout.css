@@ -123,7 +123,6 @@ i.fa-angle-up{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* background: red; */
 }
 .flex>i{margin-top: 15px;}
 
@@ -135,7 +134,7 @@ i.fa-angle-up{
 footer{
     background: #484848;
     text-align: center;
-    position: relative;
+    /* position: relative; */
 }
 .f_lnb{
     border-top: 2px solid #000;
@@ -160,7 +159,6 @@ footer > h2 img{
 }
 .f_sns > li{
     margin: 0px 5px 10px 5px;
-    /* background: red; */
 }
 .f_sns img{
     width: 34px;

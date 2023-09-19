@@ -744,7 +744,8 @@ strong{
 
 
 /* 메인6 패밀리사이트 서식 시작 */
-.fs{position: relative;
+.fs{
+    /* position: relative; */
     background: #FAF9F7;
     width: 100%;overflow: hidden;
     height: 80px;
@@ -802,7 +803,7 @@ aside>a{
     display: none;
 
 }
-  
+
 
 
 
