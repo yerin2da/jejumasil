@@ -775,13 +775,14 @@ strong{
     width: 60px;
     vertical-align: middle;
 }
-.slide i.fas{
+.slide>i.fas{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #333;
 }
-.slide i.fa-angle-right{
+.slide>i.fa-angle-right{
+    position: absolute;
     right: 0;
 }
 
