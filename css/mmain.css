@@ -757,7 +757,6 @@ strong{
 }
 .slide{/*보여줄 이미지만큼 100/개수*/
     width: 33.3333%;
-    background: red;
 }
 .slide>h3{
     display: none;
