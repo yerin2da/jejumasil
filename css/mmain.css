@@ -745,11 +745,11 @@ strong{
 
 /* 메인6 패밀리사이트 서식 시작 */
 .fs{
-    /* position: relative; */
     background: #FAF9F7;
     width: 100%;overflow: hidden;
     height: 80px;
     line-height: 80px;
+    position: relative;
     
 }
 .fs>h2{
@@ -757,7 +757,7 @@ strong{
 }
 .slide{/*보여줄 이미지만큼 100/개수*/
     width: 33.3333%;
-    position: relative;
+    background: red;
 }
 .slide>h3{
     display: none;
@@ -775,15 +775,14 @@ strong{
     width: 60px;
     vertical-align: middle;
 }
-.slide>i.fas{
+.fs> i.fas{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #333;
 }
-.slide>i.fa-angle-right{
-    position: absolute;
-    right: 0;
+.fs>i.fa-angle-right{
+    right: 0%;
 }
 
 
